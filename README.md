@@ -1,35 +1,19 @@
-# hw1_M11423042
+# hw4_M11423042
 ---
-
-###  實驗一
-
 
 ####  圖像檔案
 | 類別 | 檔名 | 說明 |
 |------|------|------|
-| 混淆矩陣圖 | `CM_ID3.png`, `CM_C45.png`, `CM_C50.png`, `CM_CART.png` | 各演算法在測試集的分類結果視覺化。 |
-| 決策樹圖 | `Tree_ID3.png`, `Tree_C45.png`, `Tree_C50.png`, `Tree_CART.png` | 各模型的三層決策樹結構。 |
-
-> 🔸 `CM_` 開頭 → 混淆矩陣圖  
-> 🔸 `Tree_` 開頭 → 三層決策樹圖  
+| Apriori演算法 | `Apriori_n_rules_maxlen3.png`, `Apriori_n_unique_recommendable_items_maxlen3.png`, `Apriori_time_total_sec_maxlen3.png` | Apriori演算法的的輸出結果。 |
+| FP-Growth演算法輸出結果| `Growth_denseplusreuse_itemsets_n_rules_maxlen3.png`, `Growth_denseplusreuse_itemsets_n_unique_recommendable_items_maxlen3.png`, `Growth_denseplusreuse_itemsets_time_total_sec_maxlen3.png` | FP-Growth演算法的的輸出結果。 |
 
 ####  程式與結果檔案
 | 檔名 | 功能說明 |
 |------|-----------|
-| **dm_decision_tree_ID3.C4.5.CART.ipynb** | 使用前處理後資料集訓練並測試 **ID3、C4.5、CART** 決策樹分類器。 |
-| **dm_decision_tree_C5.0.ipynb** | 使用前處理後資料集訓練並測試 **C5.0** 決策樹分類器。 |
-| **Test_Predictions_ID3.C4.5.CART.xlsx** | 彙整 ID3、C4.5、CART 模型的測試集預測結果。 |
-| **Test_Predictions_C5.0.xlsx** | 彙整 C5.0 模型的測試集預測結果。 |
+| **HW4_Associative analysis.ipynb** | 對真實交易資料進行清理與轉換，建立交易與商品的關係，再分別使用 Apriori 與 FP-Growth 演算法進行關聯規則探勘，透過多組支持度與信心度參數比較規則數量與運算效能，並將結果存檔與視覺化呈現，最後實作一個可輸入多商品的推薦系統作為應用示範。 |
+| **best_rules.csv** | 推薦系統實際使用的最終關聯規則。 |
+| **mined_rules_fpgrowth_maxlen3.csv** | 保存 FP-Growth在指定參數下所挖掘的關聯規則，作為規則存檔與重複使用的示範。 |
+| **result_apriori.csv** | Apriori演算法整體效能與產出結果的彙整表。 |
+| **result_fpgrowth.csv** | FP-Growth演算法整體效能與產出結果的彙整表。 |
 
 ---
-
-###  實驗二
-
-共四個檔案，探討 **CART 決策樹** 之 **後剪枝 (Cost-Complexity Pruning)** 與模型複雜度。
-
-| 檔名 | 功能說明 |
-|------|-----------|
-| **dm_post_pruning_decision_tree_finalver.ipynb** | 透過 **Grid Search** 比較不同樹深度與葉節點數的組合，並以 **Elbow Method** 尋找模型複雜度與準確率的平衡點。選出三組代表模型（Small、Medium、Large），最後於測試集進行評估。 |
-| **Small_tree_d3_l16.png** | 小型模型（樹深度=3，葉節點=16）之決策樹圖。 |
-| **Medium_tree_d6_l16.png** | 中型模型（樹深度=6，葉節點=16）之決策樹圖。 |
-| **Large_tree_d10_l64.png** | 大型模型（樹深度=10，葉節點=64）之決策樹圖。 |
