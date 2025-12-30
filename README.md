@@ -5,7 +5,7 @@
 | 類別 | 檔名 | 說明 |
 |------|------|------|
 | Apriori演算法 | `Apriori_n_rules_maxlen3.png`, `Apriori_n_unique_recommendable_items_maxlen3.png`, `Apriori_time_total_sec_maxlen3.png` | Apriori演算法的的輸出結果。 |
-| FP-Growth演算法輸出結果| `Growth_denseplusreuse_itemsets_n_rules_maxlen3.png`, `Growth_denseplusreuse_itemsets_n_unique_recommendable_items_maxlen3.png`, `Growth_denseplusreuse_itemsets_time_total_sec_maxlen3.png` | FP-Growth演算法的的輸出結果。 |
+| FP-Growth演算法| `Growth_denseplusreuse_itemsets_n_rules_maxlen3.png`, `Growth_denseplusreuse_itemsets_n_unique_recommendable_items_maxlen3.png`, `Growth_denseplusreuse_itemsets_time_total_sec_maxlen3.png` | FP-Growth演算法的的輸出結果。 |
 
 ####  程式與結果檔案
 | 檔名 | 功能說明 |
